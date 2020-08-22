@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html>
+    <head>
+       
+        <title>Book Entry  </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="../css/book.css">       
+        <script src="book.js"></script>
+        
+
+    </head>
+    <body>
+
+
+        
+        <div class="wrapper">
+            <div class="title">
+              Book Registration
+            </div>
+
+            <form name="myForm" onsubmit="return validateForm()" action="trail.php" method="post">
+            <div class="form">
+               <div class="inputfield">
+                  <label>Title of the book </label>
+                  <input type="text" class="input" name="title" required >
+               </div>  
+
+               <div class="inputfield">
+                  <label>Author 1</label>
+                  <input type="text" class="input" placeholder="Required" required>
+               </div>
+               <div class="inputfield">
+                <label>Author 2</label>
+                <input type="text" class="input" >
+             </div>  
+             <div class="inputfield">
+                <label>Author 3</label>
+                <input type="text" class="input" >
+             </div>
+             <div class="inputfield">
+                <label>Author 4</label>
+                <input type="text" class="input" >
+             </div>
+             <div class="inputfield">
+                <label>Author 5</label>
+                <input type="text" class="input" >
+             </div>
+
+ 
+              <div class="inputfield">
+                  <label> ISBN Number</label>
+                  <input type="text" class="input" name="isbn" required>
+               </div>                 
+                <div class="inputfield">
+                  <label>Publisher </label>
+                  <input type="text" class="input" name="publisher" required>
+               </div> 
+              <div class="inputfield">
+                  <label>Edition</label>
+                  <input type="text" class="input" name="edition" required>
+               </div> 
+
+              <div class="inputfield">
+                  <label>Cost of the book</label> 
+                  <input type="number" class="input" name="price" required>
+               </div>
+               
+               <div class="inputfield">
+                <label>Date of Publication</label> 
+                <input type="date" class="input" required>
+             </div> 
+
+              <div class="inputfield terms">
+                  <label class="check">
+                    <input type="checkbox" required>
+                    <span class="checkmark"></span>
+                  </label>
+                  <p>Agreed to terms and conditions</p>
+               </div> 
+               
+              <div class="inputfield">
+                <input type="submit" value="Register" class="btn">
+              </div>
+            </div>
+            </form>
+        </div>	
+
+        
+
+    </body>
+</html>
