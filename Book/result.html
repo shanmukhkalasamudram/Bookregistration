@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>
+            Check out 
+        </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/result.css"> 
+    </head>
+    <body>
+        <center>
+        <h1>
+            Check-out 
+        </h1>
+        <h2>
+            
+            <form name="myForm" onsubmit="return validateForm()" action="submit.html" >
+            <table id="confirm">
+
+                <tr>
+                   
+                    <th> Bill Id   </th>
+                    <th> <span id="random"></span>  </th>
+
+                  </tr>
+                <tr>
+                   
+                    <td>ISBN number </td>
+                    <td> <span id="isbn"></span>  </td>
+
+                  </tr>
+                  <tr>
+                   
+                    <th> Title of the book  </th>
+                    <th> <span id="result"></span>  </th>
+
+                  </tr>
+                  <tr>
+                   
+                    <td>Date of Issue </td>
+                    <td> <span id="dd"></span>-<span id="ddd"></span>-<span id="dddd"></span>  </td>
+
+                  </tr>
+                  <tr>
+                   
+                    <th>Date of Return </th>
+                    <th> <span id="rd"></span>-<span id="rdd"></span>-<span id="rddd"></span>  </th>
+
+                  </tr>
+                
+              </table>
+              <br>
+              <input type="submit"  class= "button" value="Confirm" class="btn">
+            </form>
+        
+            <script>
+                document.getElementById("result").innerHTML= localStorage.getItem("textvalue");
+                document.getElementById("isbn").innerHTML= localStorage.getItem("isbn");
+                document.getElementById("random").innerHTML= localStorage.getItem("random");
+                var d = new Date();
+                var dd = d.getDate();
+                var rd = d.getDate();
+                var ddd = d.getMonth()+1;
+                var rdd = d.getMonth()+2;
+                 var dddd = d.getFullYear();
+                 var rddd = d.getFullYear();
+                 document.getElementById("dd").innerHTML = dd;
+                 document.getElementById("ddd").innerHTML = ddd;
+                 document.getElementById("dddd").innerHTML = dddd;
+                 document.getElementById("rd").innerHTML = rd;
+                 document.getElementById("rddd").innerHTML = rddd;
+                 document.getElementById("rdd").innerHTML = rdd;
+                
+               
+                
+                
+            </script>
+        </h2>
+    </center>
+    </body>
+</html>

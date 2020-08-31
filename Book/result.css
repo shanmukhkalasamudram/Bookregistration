@@ -1,0 +1,47 @@
+<style>
+
+body{
+    background: #fec107;
+    background-image: url(../images/airport.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 0 10px;
+  }
+#confirm {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#confirm td, #confirm th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#confirm tr:nth-child(even){background-color: #f2f2f2;}
+
+#confirm tr:hover {background-color: #ddd;}
+
+#confirm th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: lightblue;
+  color: white;
+}
+
+.button {
+    background-color: royalblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+</style>
